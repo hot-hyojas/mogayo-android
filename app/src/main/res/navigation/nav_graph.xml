@@ -9,7 +9,8 @@
         android:id="@+id/mainFragment"
         android:name="com.example.mogayo_android.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main" />
+
     <fragment
         android:id="@+id/chatRoomFragment"
         android:name="com.example.mogayo_android.chatroom.ChatRoomFragment"
