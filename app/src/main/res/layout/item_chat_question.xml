@@ -30,7 +30,7 @@
 
                 <TextView
                     android:id="@+id/tv_chat_question_header"
-                    style="@style/body_text"
+                    style="@style/normalText"
                     android:layout_width="match_parent"
                     android:textSize="14sp"
                     android:gravity="center"
@@ -70,7 +70,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/rg_chat_quesetion" />
 
                 <TextView
-                    style="@style/body_text"
+                    style="@style/normalText"
                     android:id="@+id/tv_close"
                     android:layout_width="0dp"
                     android:gravity="center"
@@ -91,7 +91,7 @@
                     app:layout_constraintTop_toBottomOf="@id/divide_1" />
 
                 <TextView
-                    style="@style/body_text"
+                    style="@style/normalText"
                     android:id="@+id/tv_call"
                     android:layout_width="0dp"
                     android:layout_weight="1"

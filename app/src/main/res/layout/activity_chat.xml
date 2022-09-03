@@ -13,7 +13,7 @@
         tools:context=".present.views.main.recipe.RecipeFragment">
 
         <TextView
-            style="@style/toolBarText"
+            style="@style/normalText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
