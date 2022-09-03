@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Mogayo-android</string>
+
+    <!-- Bottom Navigation -->
+    <string name="menu_main">메인</string>
+    <string name="menu_chat">대화방</string>
+    <string name="menu_info">내 정보</string>
 </resources>
