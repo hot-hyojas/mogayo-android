@@ -14,222 +14,313 @@
         tools:context=".info.InfoFragment">
 
         <TextView
+            style="@style/normalText"
             android:id="@+id/tv_info_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="@string/menu_info"
-            android:textColor="#808080"
+            android:textColor="#3e3e3e"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/iv_info"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="116dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_info"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_info_title" />
+        <!-- 연결된 가족이 없을 때 -->
 
-        <TextView
-            android:id="@+id/tv_info_no_family"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="아직 가족 맺기가 진행되지 않았어요."
-            android:textSize="16sp"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_info" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_info_code_check"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg_filled_round_button"
-            android:padding="15dp"
-            android:text="초대 코드 확인하기"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_info_no_family" />
-
-        <!-- My page 가족 맺기 성공 -->
-
-        <ImageView
-            android:id="@+id/iv_info_success"
-            android:layout_width="82dp"
-            android:layout_height="82dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="50dp"
-            android:src="@drawable/ic_info_profile"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_info_title" />
-
-        <TextView
-            android:id="@+id/tv_info_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="모가요"
-            android:textColor="#808080"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginStart="18dp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_info_success"
-            app:layout_constraintStart_toEndOf="@+id/iv_info_success"
-            app:layout_constraintTop_toTopOf="@+id/iv_info_success" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_info_modify"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="gone"
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="55dp"
-            android:layout_marginEnd="55dp"
-            android:layout_marginTop="23dp"
-            android:background="@drawable/bg_opaque_round_button"
-            android:padding="15dp"
-            android:text="프로필 수정"
-            android:textColor="@color/main_color"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_info_success" />
+            android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cv_info"
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="42dp"
-            android:layout_marginEnd="20dp"
-            android:backgroundTint="#F1F1F1"
-            app:cardElevation="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_info_modify">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraint_info"
+            <ImageView
+                android:id="@+id/iv_info"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="184dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_info"
+                app:layout_constraintTop_toTopOf="parent"/>
 
-                <TextView
-                    android:id="@+id/tv_info_temp_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="내 자녀의 마음온도"
-                    android:textColor="#808080"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                style="@style/normalText"
+                android:id="@+id/tv_info_no_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="아직 가족 맺기가 진행되지 않았어요."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_info" />
 
-                <TextView
-                    android:id="@+id/tv_info_temperature"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="37dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="38℃"
-                    android:textColor="@color/main_color"
-                    android:textSize="30sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_info_temp_title" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_info_code_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginHorizontal="45dp"
+                android:background="@drawable/bg_filled_round_button"
+                android:padding="15dp"
+                android:text="초대 코드 확인하기"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_info_no_family" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <ProgressBar
-                    android:id="@+id/pb_info_temperature"
-                    style="?android:attr/progressBarStyleHorizontal"
+        <!-- 연결된 가족이 있을 때 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_info_title">
+
+            <ImageView
+                android:id="@+id/iv_info_success"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_info_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_info_name"
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="모가요"
+                android:textColor="#3e3e3e"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_info_success"
+                app:layout_constraintStart_toEndOf="@+id/iv_info_success"
+                app:layout_constraintTop_toTopOf="@+id/iv_info_success" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_info_modify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/bg_opaque_round_button"
+                android:padding="15dp"
+                android:text="프로필 수정"
+                android:textColor="@color/main_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_info_success" />
+
+            <View
+                android:id="@+id/guideline2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"
+                android:layout_marginTop="36dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_info_modify"/>
+
+            <View
+                android:id="@+id/guideline1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f6f6f6"
+                app:layout_constraintTop_toBottomOf="@+id/guideline2"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#40f0f0f0"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_info"
                     android:layout_width="match_parent"
-                    android:layout_height="12dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:indeterminateTint="@android:color/white"
-                    android:progress="38"
-                    android:progressDrawable="@drawable/progress"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_info_temperature" />
+                    android:layout_height="match_parent">
 
-                <View
-                    android:id="@+id/line_info_01"
+                    <TextView
+                        android:id="@+id/tv_info_temp_title"
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="내 자녀의 마음온도"
+                        android:textColor="#3e3e3e"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_info_temperature"
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginEnd="28dp"
+                        android:text="38℃"
+                        android:textColor="@color/main_color"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_temp_title" />
+
+                    <TextView
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫 온도 36.5℃"
+                        android:textColor="#d9d9d9"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_triangle"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_triangle"
+                        app:layout_constraintStart_toStartOf="@+id/tv_triangle" />
+
+                    <TextView
+                        android:id="@+id/tv_triangle"
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="80dp"
+                        android:text="▼"
+                        android:textColor="#d9d9d9"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toTopOf="@+id/pb_info_temperature"
+                        app:layout_constraintEnd_toEndOf="@+id/pb_info_temperature"
+                        app:layout_constraintStart_toStartOf="@+id/pb_info_temperature" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_info_temperature"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="20dp"
+                        android:indeterminateTint="@android:color/white"
+                        android:progress="38"
+                        android:progressDrawable="@drawable/progress"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_temperature" />
+
+                    <View
+                        android:id="@+id/line_info_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:background="#f1f1f1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pb_info_temperature" />
+
+                    <ImageView
+                        android:id="@+id/iv_info_child"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/ic_info_level"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/line_info_01" />
+
+                    <TextView
+                        android:id="@+id/tv_info_level_1"
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="자녀분은 현재 "
+                        android:textColor="#3e3e3e"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/iv_info_child"
+                        app:layout_constraintTop_toTopOf="@+id/iv_info_child" />
+
+                    <TextView
+                        android:id="@+id/tv_info_level"
+                        style="@style/boldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="따뜻한 햇살 단계"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/tv_info_level_1"
+                        app:layout_constraintTop_toTopOf="@+id/iv_info_child" />
+
+                    <TextView
+                        android:id="@+id/tv_info_level_2"
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="에요."
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/tv_info_level"
+                        app:layout_constraintTop_toTopOf="@+id/iv_info_child" />
+
+                    <TextView
+                        android:id="@+id/tv_info_number_of_questions"
+                        style="@style/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="덕분에 질문을 최대 5개까지 할 수 있어요."
+                        android:textSize="12sp"
+                        android:paddingBottom="50dp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_info_level_1"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_level_1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#40f0f0f0"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv_info">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_centerInParent="true"
-                    android:layout_marginTop="20dp"
-                    android:background="#E2E2E2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pb_info_temperature" />
+                    android:layout_height="match_parent"
+                    android:padding="30dp">
 
-                <ImageView
-                    android:id="@+id/iv_info_child"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_marginStart="25dp"
-                    android:src="@drawable/ic_info_level"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/line_info_01" />
+                    <TextView
+                        style="@style/normalText"
+                        android:id="@+id/tv_info_nothing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="아직 가족 맺기가 진행되지 않았어요."
+                        app:layout_constraintTop_toTopOf="parent"/>
 
-                <TextView
-                    android:id="@+id/tv_info_level_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:text="자녀분은 현재 "
-                    android:textColor="#808080"
-                    android:textSize="12sp"
-                    app:layout_constraintStart_toEndOf="@+id/iv_info_child"
-                    app:layout_constraintTop_toTopOf="@+id/iv_info_child" />
-
-                <TextView
-                    android:id="@+id/tv_info_level"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="따뜻한 햇살 단계"
-                    android:textColor="#808080"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/tv_info_level_1"
-                    app:layout_constraintTop_toTopOf="@+id/iv_info_child" />
-
-                <TextView
-                    android:id="@+id/tv_info_level_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="에요."
-                    android:textColor="#808080"
-                    android:textSize="12sp"
-                    app:layout_constraintStart_toEndOf="@+id/tv_info_level"
-                    app:layout_constraintTop_toTopOf="@+id/iv_info_child" />
-
-                <TextView
-                    android:id="@+id/tv_info_number_of_questions"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:text="덕분에 질문을 최대 5개까지 할 수 있어요."
-                    android:textColor="#808080"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/iv_info_child"
-                    app:layout_constraintStart_toEndOf="@+id/iv_info_child" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/normalText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_filled_round_button"
+                        android:paddingBottom="2dp"
+                        android:text="초대 코드 입력"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_nothing"
+                        android:textColor="@color/white"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
