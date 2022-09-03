@@ -13,7 +13,7 @@
 
     <!-- 공용 색상 -->
     <color name="main_color">#F2606A</color>
-    <color name="opaque_main_color">#26EE7B3A</color>
+    <color name="opaque_main_color">#26F2606A</color>
     <color name="bg">#40F0F0F0</color>
 
     <!-- 메인 페이지 색상 -->

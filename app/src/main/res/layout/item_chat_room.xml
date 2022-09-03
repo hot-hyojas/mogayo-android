@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        app:cardBackgroundColor="#eef1f6"
+        app:cardBackgroundColor="#24f0f0f0"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
         app:cardPreventCornerOverlap="false"
@@ -33,9 +33,11 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
-                style="@style/normalText"
-                android:layout_marginStart="16dp"
+                style="@style/mediumText"
+                android:layout_marginStart="20dp"
                 android:text="2일전"
+                android:textSize="10dp"
+                android:textColor="#bbbbbb"
                 app:layout_constraintBottom_toBottomOf="@+id/cardView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/cardView" />
@@ -45,8 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                app:cardBackgroundColor="#26EE7B3A"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/opaque_main_color"
+                app:cardCornerRadius="7dp"
                 app:cardElevation="0dp"
                 app:cardPreventCornerOverlap="false"
                 app:cardUseCompatPadding="true"
@@ -54,10 +56,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_chat_room_title">
 
                 <TextView
-                    style="@style/normalText"
-                    android:layout_margin="8dp"
+                    style="@style/boldText"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginHorizontal="10dp"
                     android:text="3개의 답변"
-                    android:textColor="#EE7B3A" />
+                    android:textSize="10dp"
+                    android:textColor="@color/main_color" />
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

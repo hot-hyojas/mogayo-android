@@ -11,13 +11,12 @@
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
-            android:visibility="gone"
-            android:id="@+id/cv_chat_my"
+            android:id="@+id/cv_chat_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            app:cardBackgroundColor="#eef1f6"
+            app:cardBackgroundColor="@color/main_color"
             app:cardCornerRadius="12dp"
             app:cardElevation="0dp"
             app:cardPreventCornerOverlap="false"
@@ -26,15 +25,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tv_chat_message_my"
+                android:id="@+id/tv_chat_message_parent"
                 style="@style/normalText"
-                android:layout_marginBottom="8dp"
                 android:maxWidth="260dp"
-                android:paddingLeft="12dp"
-                android:paddingTop="8dp"
-                android:paddingRight="12dp"
+                android:padding="20dp"
+                android:textSize="14dp"
                 android:text="티비 소리가 갑자기 안 들리는데, 어디를 보면 되나요?"
-                android:textColor="#000000" />
+                android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -43,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="16dp"
-            app:cardBackgroundColor="#FC7C33"
+            app:cardBackgroundColor="#40f0f0f0"
             app:cardCornerRadius="12dp"
             app:cardElevation="0dp"
             app:cardPreventCornerOverlap="false"
