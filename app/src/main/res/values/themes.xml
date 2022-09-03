@@ -10,23 +10,38 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Status Bar 배경색 -->
+        <item name="android:statusBarColor">@color/white</item>
+
+        <!-- Status Bar 글자색 -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="toolBarText">
+    <style name="boldText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/toolBarTextSize</item>
         <item name="android:textColor">@color/colorBlackHighEmphasis</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 
-    <style name="body_text">
+    <style name="mediumText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/bodyTextSize</item>
         <item name="android:textColor">@color/colorBlackHighEmphasis</item>
+        <item name="android:fontFamily">@font/noto_sans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="normalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlackHighEmphasis</item>
+        <item name="android:fontFamily">@font/noto_sans_regular</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 

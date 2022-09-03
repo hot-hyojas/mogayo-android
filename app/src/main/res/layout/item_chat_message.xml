@@ -27,7 +27,7 @@
 
             <TextView
                 android:id="@+id/tv_chat_message_my"
-                style="@style/body_text"
+                style="@style/normalText"
                 android:layout_marginBottom="8dp"
                 android:maxWidth="260dp"
                 android:paddingLeft="12dp"
@@ -53,7 +53,7 @@
 
             <TextView
                 android:id="@+id/tv_chat_message_your"
-                style="@style/body_text"
+                style="@style/normalText"
                 android:layout_marginBottom="8dp"
                 android:maxWidth="260dp"
                 android:paddingLeft="12dp"
