@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Mogayo-android</string>
+
+    <!-- Bottom Navigation -->
+    <string name="menu_main">메인</string>
+    <string name="menu_chat">대화방</string>
+    <string name="menu_info">내 정보</string>
+    <string name="tv_main_hi">어서오세요,</string>
+    <string name="tv_main_name">00님.</string>
+    <string name="tv_main_question">무엇이 궁금하신가요?</string>
+    <string name="tv_main_suggestion">평소 자녀분에게 묻고 싶었던 질문을 남겨보세요!</string>
+    <string name="et_main_question_hint">궁금한 것을 이곳을 터치하고 적어주세요.</string>
+    <string name="tv_main_count">0/150</string>
+    <string name="btn_main_add_photo">사진 추가</string>
+    <string name="btn_main_send_question">질문 보내기</string>
 </resources>

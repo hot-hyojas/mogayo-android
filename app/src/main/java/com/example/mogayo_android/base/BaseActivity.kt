@@ -1,4 +1,4 @@
-package com.juhwan.anyang_yi.present.config
+package com.example.mogayo_android.base
 
 import android.os.Bundle
 import android.widget.Toast
