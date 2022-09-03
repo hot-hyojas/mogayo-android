@@ -40,7 +40,7 @@
     <style name="normalText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/colorBlackHighEmphasis</item>
+        <item name="android:textColor">#3e3e3e</item>
         <item name="android:fontFamily">@font/noto_sans_regular</item>
         <item name="android:includeFontPadding">false</item>
     </style>
