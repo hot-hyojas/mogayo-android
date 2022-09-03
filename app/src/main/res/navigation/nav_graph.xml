@@ -10,6 +10,7 @@
         android:name="com.example.mogayo_android.main.MainFragment"
         android:label="MainFragment"
         tools:layout="@layout/fragment_main" />
+
     <fragment
         android:id="@+id/chatRoomFragment"
         android:name="com.example.mogayo_android.chatroom.ChatRoomFragment"
@@ -20,5 +21,4 @@
         android:name="com.example.mogayo_android.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
-
 </navigation>
