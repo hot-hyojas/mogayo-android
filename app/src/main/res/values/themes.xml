@@ -13,4 +13,20 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="toolBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/toolBarTextSize</item>
+        <item name="android:textColor">@color/colorBlackHighEmphasis</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="body_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/bodyTextSize</item>
+        <item name="android:textColor">@color/colorBlackHighEmphasis</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
 </resources>
