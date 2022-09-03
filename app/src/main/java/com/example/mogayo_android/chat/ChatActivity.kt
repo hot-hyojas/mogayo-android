@@ -3,8 +3,8 @@ package com.example.mogayo_android.chat
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mogayo_android.R
+import com.example.mogayo_android.base.BaseActivity
 import com.example.mogayo_android.databinding.ActivityChatBinding
-import com.juhwan.anyang_yi.present.config.BaseActivity
 
 class ChatActivity : BaseActivity<ActivityChatBinding>(R.layout.activity_chat) {
     //private val viewModel: NoticeViewModel by viewModels()
