@@ -29,13 +29,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_info_title" />
 
-
     <TextView
         android:id="@+id/tv_info_no_family"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="아직  가족 맺기가 진행되지 않았어요."
+        android:text="아직 가족 맺기가 진행되지 않았어요."
         android:textSize="16sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,12 +46,12 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#9C9C9C"
+        android:backgroundTint="@color/point_orange"
         android:padding="20dp"
+        android:visibility="invisible"
         android:text="초대 코드 확인하기"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_info_no_family" />
@@ -89,6 +88,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="55dp"
         android:padding="18dp"
+        android:backgroundTint="@color/point_orange"
         android:text="프로필 수정"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,6 +133,7 @@
                 android:layout_marginTop="37dp"
                 android:layout_marginEnd="20dp"
                 android:text="38℃"
+                android:textColor="@color/point_orange"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_info_temp_title" />
